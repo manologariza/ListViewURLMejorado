@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:onClick="ocultarTeclado"
+    android:orientation="vertical"
+    android:textColor="#000000"
+    tools:context="com.example.sergioromeroburdalo.urladaptador.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Listado de URL"
+        android:textColor="#000000" />
+
+    <ListView
+        android:id="@+id/lvURL"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:dividerHeight="10dp"></ListView>
+
+    <LinearLayout
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titulo:"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etTitulo"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:onClick="meterNuevo"
+                android:text="Guardar"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/etURL"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numero que borrar:"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etBorrar"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="BORRAR"
+                android:textColor="#000000"
+                android:onClick="borrarElemento"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
