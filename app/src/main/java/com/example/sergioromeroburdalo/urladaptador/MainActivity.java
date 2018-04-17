@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void subirElemento(int pos){
-        if(pos!=0){
+        if(pos != 0){
             Datos registroAux=new Datos(lista.get(pos).getId(), lista.get(pos).getNombre(), lista.get(pos).getURL());
             lista.set(pos, lista.get(pos-1));
             lista.set(pos-1, registroAux);
