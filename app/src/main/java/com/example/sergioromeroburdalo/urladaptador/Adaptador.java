@@ -55,11 +55,13 @@ public class Adaptador extends BaseAdapter {
 
         TextView titulo=(TextView)vista.findViewById(R.id.tvNombre);
         final TextView detalle=(TextView)vista.findViewById(R.id.tvURL);
+        TextView numero=(TextView)vista.findViewById(R.id.tvId);
 
 
 
         titulo.setText(ListaObjetos.get(i).getNombre().toString());
         detalle.setText(ListaObjetos.get(i).getURL().toString());
+        numero.setText(String.valueOf(ListaObjetos.get(i).getId()));
 
 
         detalle.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +73,7 @@ public class Adaptador extends BaseAdapter {
                 contexto.startActivity(intent);
             }
         });
+
 
         return vista;
     }

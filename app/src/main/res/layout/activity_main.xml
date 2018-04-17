@@ -35,21 +35,33 @@
         android:layout_marginTop="40dp"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Titulo:"
-            android:textColor="#000000" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/etTitulo"
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:textColor="#000000" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/etTitulo"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:hint="Título..."
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textColor="#000000" />
+                <EditText
+                    android:id="@+id/etURL"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:hint="URL..."
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textColor="#000000" />
+
+
+            </LinearLayout>
+
 
             <Button
                 android:id="@+id/btnGuardar"
@@ -58,37 +70,26 @@
                 android:layout_marginLeft="20dp"
                 android:onClick="meterNuevo"
                 android:text="Guardar"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:layout_gravity="center"/>
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="URL:"
-            android:textColor="#000000" />
 
-        <EditText
-            android:id="@+id/etURL"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Numero que borrar:"
-            android:textColor="#000000" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
 
             <EditText
                 android:id="@+id/etBorrar"
                 android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:hint="Número a borrar..."
+                android:textColorHint="@color/colorPrimaryDark"
+                android:inputType="number"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -96,7 +97,8 @@
                 android:layout_marginLeft="20dp"
                 android:text="BORRAR"
                 android:textColor="#000000"
-                android:onClick="borrarElemento"/>
+                android:onClick="borrarElemento"
+                android:layout_gravity="center"/>
 
 
         </LinearLayout>

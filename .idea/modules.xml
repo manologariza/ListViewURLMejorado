@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/UrlAdaptador.iml" filepath="$PROJECT_DIR$/UrlAdaptador.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/UrlAdaptador.iml" filepath="$PROJECT_DIR$/.idea/UrlAdaptador.iml" />
+      <module fileurl="file://C:\Users\Manolo\ProyectosAndroid\UrlAdaptador\UrlAdaptador.iml" filepath="C:\Users\Manolo\ProyectosAndroid\UrlAdaptador\UrlAdaptador.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
